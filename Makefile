@@ -1,7 +1,7 @@
 EXEC=bin/main
 obj=obj/main.o
-build: $(EXEC)
-run: $(EXEC)
+build: dirs $(EXEC)
+run: dirs $(EXEC)
 	./$(EXEC)
 $(EXEC): $(obj)
 	g++ $(obj) -o $(EXEC)
@@ -10,3 +10,5 @@ obj/%.o: src/%.cpp
 clean:
 	-rm obj/*
 	-rm bin/*
+dirs:
+	-mkdir -p bin obj
