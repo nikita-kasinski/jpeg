@@ -1,4 +1,4 @@
-EXEC=main
+EXEC=bin/main
 obj=obj/main.o
 build: $(EXEC)
 run: $(EXEC)
