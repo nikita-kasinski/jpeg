@@ -4,5 +4,5 @@
 class BinaryReader
 {
 public:
-    virtual std::uint8_t Get() = 0;
+    virtual bool Get(uint8_t& OutX) = 0;
 };
