@@ -1,7 +1,7 @@
 INCLUDE=-Iinclude
 CPPFLAGS=$(INCLUDE)
 EXEC=bin/main
-obj=obj/main.o
+obj=obj/main.o obj/FileBinaryReader.o
 build: dirs $(EXEC)
 run: dirs $(EXEC)
 	./$(EXEC)
