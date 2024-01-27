@@ -1,7 +1,7 @@
 INCLUDE=-Iinclude
-CPPFLAGS=$(INCLUDE)
+CPPFLAGS=$(INCLUDE) -Wall -Wextra -Wpedantic -Wconversion
 EXEC=bin/jpegdump
-obj=obj/main.o obj/FileBinaryReader.o
+obj=obj/main.o obj/jpeg_reader.o
 build: dirs $(EXEC)
 run: dirs $(EXEC)
 	./$(EXEC)
